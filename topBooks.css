@@ -1,0 +1,38 @@
+@font-face {
+    font-family: mainFont;
+    src: url(menuFont.ttf);
+  }
+
+.topBooksHeader{
+    font-family: mainFont;
+    position: absolute;
+    left:26.5%;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.topBooksContainer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display:grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-template-rows: 0.fr;
+    grid-gap: 20px;
+    width:50%;
+    padding-top: 80px;
+    height:460px;
+}
+
+.bookGridItem{
+    padding: 20px 0px 0px 0px;
+}
+
+.bookGridDescription{
+    font-family: mainFont;
+    font-size: 15px;
+    padding: 10px 0px 0px 0px;
+    color: black;
+}
+
+

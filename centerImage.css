@@ -1,0 +1,45 @@
+@font-face {
+    font-family: mainFont;
+    src: url(menuFont.ttf);
+  }
+
+.centerContainer{
+    position: relative;
+    text-align:center;
+}
+
+.centerText{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    font-family: mainFont;
+    font-size: 3.50vw;
+    color:white;
+    width: 55%;
+    transform: translate(-50%,-50%);
+    font-weight: normal;
+}
+
+.aboutButton{
+    position: absolute;
+    top: 60%;
+    left:44.6%;
+    color:white;
+    font-family: mainFont;
+    font-size: 1.6vw;
+    padding: 10px 25px 10px 25px;
+    border: 0px solid white;
+
+}
+
+.aboutButton:hover{
+    background-color: #88cf6d;
+    cursor: pointer;
+
+}
+.mainPicture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 550px;
+}

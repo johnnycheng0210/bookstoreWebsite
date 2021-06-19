@@ -1,0 +1,57 @@
+body{
+  margin: 0;
+}
+
+@font-face {
+  font-family: navFont;
+  src: url(menuFont.ttf);
+}
+
+.navBar{
+  height: 75px;
+}
+
+.navBar-icon{
+  left:7%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+
+
+.navContainer{
+  width: 50%;
+  transform: translate(-50%, -50%);
+  left:50%;
+  top:50%;
+  height: 75px;
+  position:relative;
+}
+
+
+.navBar-tabs{
+  float:right;
+  font-family: navFont;
+  padding-top: 25px;
+  color: white;
+  font-size: 18px;
+}
+
+.navBar-tabs a{
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.nonActiveTab:hover{
+  background-color: #88cf6d;
+  cursor: pointer;
+}
+
+.activeTab{
+  color:lightgrey;
+}
+.activeTab:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: regFont;
+    src: url(menuFont.ttf);
+  }
+
+
+.registrationContainer{
+    object-fit: contain;
+    position: relative;
+    width:100%;
+    padding-bottom: 20x;
+    text-align: center;
+}
+
+.registrationPicture{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    width: 50%;
+}
+
+.joinButton{
+    position: absolute;
+    top: 45%;
+    left:41%;
+    color:white;
+    font-family: mainFont;
+    font-size: 1.4vw;
+    padding: 10px 25px 10px 25px;
+    border: 0px solid white;
+
+}
+
+.joinButton:hover{
+    background-color: #88cf6d;
+    cursor: pointer;
+}
+
+
+
+
+

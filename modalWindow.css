@@ -1,0 +1,129 @@
+.regFormBackground {
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 130px; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+    font-family:regFont; 
+    opacity: 0;
+    transition: all .5s;
+}
+
+
+.regFormBackground.show{
+    top:0;
+    opacity: 1;
+}
+
+.regFormBackground.hide{
+    top:-100;
+    opacity: 0;
+}
+
+
+.formContent {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 45%;
+
+}
+
+.close {
+    color: black;
+    padding-right: 30px;
+    top:2%;
+    left:91%;
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.half{
+    float: right;
+}
+
+.first-half{
+    width:50%;
+    position: relative;
+}
+
+.second-half{
+    width:50%;
+    position:relative;
+    text-align: right;
+}
+
+.formHeadings{
+    font-size: 24px;
+}
+
+.regoForm {
+    padding: 30px 5px 65px 35px;
+    background-color: white;
+}
+
+.inputField{
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    width: 90%;
+    font-size: 18px;
+}
+
+.inputField:focus{
+    outline:0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+}
+
+.regoForm label,input{
+    display: block;
+}
+
+.regoForm label{
+    margin-bottom: 15px;
+}
+
+.regFormText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: mainFont;
+    font-size: 1.70vw;
+    color:white;
+    width: 80%;
+    transform: translate(-50%,-50%);
+}
+
+.submitForm{
+    position: absolute;
+    top: 94.3%;
+    left:50%;
+    color:white;
+    font-family: mainFont;
+    font-size: 1.0vw;
+    padding: 10px 25px 10px 25px;
+    border: 0px solid white;
+    transform: translate(-50%,-50%);
+}
+
+.submitForm:hover{
+    background-color: #88cf6d;
+    cursor: pointer;
+}
+
