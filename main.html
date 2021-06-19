@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="centerImage.css">
+    <link rel="stylesheet" type="text/css" href="informationSection.css">
+    <link rel="stylesheet" type="text/css" href="registration.css">
+    <link rel="stylesheet" type="text/css" href="topBooks.css">
+    <link rel="stylesheet" type="text/css" href="bottomNavBar.css">
+    <link rel="stylesheet" type="text/css" href="modalWindow.css">
+    <link rel="stylesheet" type="text/css" href="color.css">
+
+    <link rel="icon" href="icon.png">
+</head>
+<title>
+    Book Program Discussion
+</title>
+<body>
+
+    <div class = "navBar custom-background-color">
+        <div class = "navContainer">
+        <div class="navBar-icon">
+            <img class="logo" src="logo.png" alt="logo">
+        </div>
+        <div class="navBar-tabs">
+                <a class="activeTab">Home</a>
+                <a class="nonActiveTab">About</a>
+                <a class="nonActiveTab">Books</a>
+                <a class="nonActiveTab">News</a>
+        </div>
+        
+        </div>
+    </div>
+
+    <div class = "centerContainer">
+        <img src="bookscropped.jpg" class ="mainPicture" alt="Books" width=100%>
+        <h1 class = "centerText">Connecting Local Book Lovers </h1>
+        <button class="aboutButton custom-background-color"> About Us</button>
+    </div>
+
+    <div class = "informationContainer">
+        <div class= "gridItem custom-color">Wide range of books
+            <div class="gridDescription">
+               Our collection of books will suit all<span class="br"></span> your unique preferences.
+            </div>
+        </div>
+        <div class= "gridItem custom-color">Affordable Costs
+            <div class="gridDescription">
+                We keep our costs affordable so<span class="br"></span>everyone can be included.
+            </div>
+        </div>
+        <div class= "gridItem custom-color">Flexible Membership
+            <div class="gridDescription">
+                Join with your own group or<span class="br"></span>join an existing group.
+            </div>
+        </div>
+    </div>
+
+    <div class="registrationContainer">
+        <img src="bookclub2.jpg" class = "registrationPicture" alt = "Book club">
+        <button class="joinButton custom-background-color" id="trigger-modal">Become a BPD member</button>
+    </div>
+    
+    <h3 class="topBooksHeader custom-color">Top Books</h3>
+
+    <div class = "topBooksContainer">
+        <div class= "bookGridItem">
+            <img src="quietmanbook.jpg" id="book1" height=300px alt="A Quiet Man Book">
+            <div class="bookGridDescription">
+                A Quiet Man - by Tom Wood
+            </div>
+        </div>
+        <div class= "bookGridItem">
+            <img src="dreambook.jpg" class="book1" height=300px alt="The Dream Weavers Book">
+            <div class="bookGridDescription">
+                The Dream Weavers - Barbara Erskine
+            </div>
+        </div>
+        <div class= "bookGridItem">
+            <img src="unshelteredbook.jpg" class="book1" height=300px alt="Unsheltered Book">
+            <div class="bookGridDescription">
+                Unsheltered - by Barbara Kingsolver
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class = "bottomNavBar">
+            <ul>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Privacy Policy</li>
+                <li>Site Map</li>
+                <li>Terms and Conditions</li>
+            </ul>
+    </div>
+
+    <div id="registrationForm" class="regFormBackground">
+        <div class="formContent">
+        <div class="half first-half">
+          <div class="regoForm" id="bookclubrego">
+            <span class="close" id="closeButton">&times;</span>
+              <form>
+                  <div id="userDetails" class="userDetails">
+                    <label class = "formHeadings">Personal Details</label>
+                    <label for="gName">
+                        Given Name
+                        <input class="inputField" type="text" id="gName" name= "Given Name">
+                    </label>
+                        
+                    <label for="surname">
+                        Surname
+                        <input class="inputField" type="text" id="surname" name= "Surname">
+                    </label>
+
+                    <label for="username">
+                        Username
+                        <input class="inputField" type="text" id="username" name= "Username">
+                    </label>
+
+                    <label for="password">
+                        Password
+                        <input class="inputField" type="password" id="password" name= "Password">
+                    </label>
+                  </div>
+
+                  <div id="addresses" class="userAddress">
+                    <label class = "formHeadings">Address</label>
+                    <label for="hAddress">
+                        Home Address
+                        <input class="inputField" type="text" id="hAddress" name= "Home Address">
+                    </label>
+
+                    <label for="wAddress">
+                        Work Address
+                        <input class="inputField" type="text" id="wAddress" name= "Work Address">
+                    </label>
+                  </div>
+
+                  <div id="contacts" class="userContacts">
+                    <label class = "formHeadings">Contacts</label>
+                    <label for="mNumber">
+                        Mobile Number
+                        <input class="inputField" type="text" id="mNumber" name= "Mobile Number">
+                    </label>
+
+                    <label for="Email">
+                        Email
+                        <input class="inputField" type="text" id="Email" name= "Email">
+                    </label>
+                </div>
+                  <button class="submitForm custom-background-color" id="registerButton">Register</button>
+              </form>
+          </div>
+        </div>
+        <div class="half second-half">
+            <img src="57a639.png"  height="699px" width="100%" alt="Green Background">
+            <div class = "regFormText">Excited to meet other book lovers?</div>
+        </div>
+        </div>
+    </div>
+
+    <script src="modalScript.js"></script>
+
+</body>
+</html>
